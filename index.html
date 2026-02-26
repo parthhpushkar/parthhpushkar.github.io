@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Pushkar | Full Stack Developer & AI/ML Enthusiast</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Parth Pushkar – Full Stack Developer & AI/ML Enthusiast. Specializing in MERN Stack, Next.js, and Generative AI. B.Tech CSE student at Bennett University." />
+    <meta name="keywords" content="Parth Pushkar, Full Stack Developer, MERN Stack, React, Next.js, AI ML, Gen AI, Portfolio, Web Developer, Bennett University" />
+    <meta name="author" content="Parth Pushkar" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#8B1A2B" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Parth Pushkar | Full Stack Developer & AI/ML Enthusiast" />
+    <meta property="og:description" content="Crafting scalable web applications & intelligent AI solutions. Explore my projects, skills, and experience." />
+    <meta property="og:image" content="https://parthhpushkar.github.io/og-image.png" />
+    <meta property="og:url" content="https://parthhpushkar.github.io" />
+    <meta property="og:site_name" content="Parth Pushkar Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Parth Pushkar | Full Stack Developer & AI/ML Enthusiast" />
+    <meta name="twitter:description" content="Crafting scalable web applications & intelligent AI solutions. Explore my projects, skills, and experience." />
+    <meta name="twitter:image" content="https://parthhpushkar.github.io/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://parthhpushkar.github.io" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <!-- ==================== PRELOADER ==================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">&lt;PP /&gt;</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloaderProgress"></div>
+            </div>
+            <p class="preloader-text">Loading<span class="preloader-dots">...</span></p>
+        </div>
+    </div>
+
+    <!-- ==================== CURSOR GLOW ==================== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;PP /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="mailto:pushkarparth117@gmail.com" class="nav-cta">Let's Talk</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting reveal-up">Hello, I'm</p>
+            <h1 class="hero-name reveal-up">Parth Pushkar</h1>
+            <div class="hero-tagline reveal-up">
+                <span class="tagline-prefix">I'm a </span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description reveal-up">
+                Crafting scalable web applications & intelligent AI solutions. 
+                Passionate about turning ideas into impactful digital experiences.
+            </p>
+            <div class="hero-actions reveal-up">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                </a>
+                <a href="resume.pdf" download="Parth_Pushkar_Resume.pdf" class="btn btn-resume">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+            <div class="hero-social reveal-up">
+                <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/parth-pushkar-b57917278" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:pushkarparth117@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fa-solid fa-user"></i>
+                            <span>PP</span>
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <p>
+                        I'm a <strong>Full Stack Developer</strong> and <strong>AI/ML enthusiast</strong> 
+                        currently pursuing my B.Tech in Computer Science Engineering at 
+                        <strong>Bennett University</strong>, Greater Noida (Expected 2027).
+                    </p>
+                    <p>
+                        I specialize in building modern, scalable web applications using the 
+                        <strong>MERN Stack</strong> and <strong>Next.js</strong>, while also exploring 
+                        the frontiers of <strong>Generative AI</strong> and <strong>Machine Learning</strong>. 
+                        My goal is to bridge the gap between intelligent systems and beautiful user experiences.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me participating in hackathons, exploring new 
+                        technologies, or contributing to open-source projects.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Internship</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Hackathon Finals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">02.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Frontend Developer Intern</h3>
+                                <p class="timeline-company">
+                                    <i class="fa-solid fa-building"></i> SettleMint India
+                                </p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="fa-regular fa-calendar"></i> July 2025 – August 2025
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built and optimized frontend features using Next.js for scalable web applications.</li>
+                            <li>Improved responsiveness and UI/UX with React.js & Tailwind CSS.</li>
+                            <li>Collaborated with backend teams for API integration and performance optimization.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">B.Tech Computer Science Engineering</h3>
+                                <p class="timeline-company">
+                                    <i class="fa-solid fa-graduation-cap"></i> Bennett University, Greater Noida
+                                </p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="fa-regular fa-calendar"></i> 2023 – Expected 2027
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Pursuing B.Tech in CSE with focus on Full Stack Development & AI/ML.</li>
+                            <li>Active participant in hackathons and technical events.</li>
+                            <li>Building real-world projects using MERN stack and AI technologies.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Computer Science</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">03.</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: GoPair -->
+                <div class="project-card glass-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://go-pair-new.vercel.app" target="_blank" rel="noopener" class="project-link-icon" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-label">Featured Project</div>
+                        <h3 class="project-title">GoPair – Cab Sharing Web App</h3>
+                        <p class="project-description">
+                            A real-time cab-sharing platform with JWT authentication, reducing average 
+                            student commute times by 20%. Features multi-step ride publishing, real-time 
+                            ride matching, ride history tracking, user reviews, and live chat via Socket.io.
+                        </p>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Express.js</span>
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://go-pair-new.vercel.app" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: CareerVista -->
+                <div class="project-card glass-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-label">Featured Project</div>
+                        <h3 class="project-title">CareerVista – AI Career Counseling</h3>
+                        <p class="project-description">
+                            An AI-driven platform helping users make informed career decisions through 
+                            a chatbot, resume analyzer, and job matching feature. Integrated personalized 
+                            career roadmaps and real-time insights with a sleek UI.
+                        </p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>OpenAI API</span>
+                            <span>Tailwind CSS</span>
+                            <span>Shadcn UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: BookMyShow Clone -->
+                <div class="project-card glass-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-label">University Project</div>
+                        <h3 class="project-title">BookMyShow Replica</h3>
+                        <p class="project-description">
+                            A responsive clone of BookMyShow with movie listings, showtimes, 
+                            seat selection, and booking simulation. Focused on responsive design 
+                            and creating an intuitive, user-friendly interface.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">04.</span> Skills & Tools
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fa-brands fa-react"></i><span>React.js</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-react"></i><span>Next.js</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-server"></i><span>Express.js</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-wind"></i><span>Tailwind CSS</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-plug"></i><span>Socket.io</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>AI / ML & Gen AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fa-solid fa-robot"></i><span>OpenAI API</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-microchip"></i><span>Gen AI</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-chart-line"></i><span>Machine Learning</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Prompt Eng.</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <h3>Tools & Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i><span>PostgreSQL</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-triangle-exclamation"></i><span>Vercel</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">05.</span> Achievements
+            </h2>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card reveal-up">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3>Smart India Hackathon 2024</h3>
+                    <p>Ranked <strong>Top 30</strong> among thousands of teams nationwide in India's biggest hackathon.</p>
+                    <div class="achievement-badge">Top 30</div>
+                </div>
+
+                <div class="achievement-card glass-card reveal-up">
+                    <div class="achievement-icon">
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Innovate Hackathon 2025</h3>
+                    <p><strong>Finalist</strong> at Microsoft's prestigious innovation-focused hackathon.</p>
+                    <div class="achievement-badge">Finalist</div>
+                </div>
+
+                <div class="achievement-card glass-card reveal-up">
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <p>Certified in <strong>HTML & CSS</strong>, <strong>Project Planning</strong>, and <strong>OOP in C++</strong>.</p>
+                    <div class="achievement-badge">Certified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">06.</span> Get In Touch
+            </h2>
+            <div class="contact-content reveal-up">
+                <p class="contact-text">
+                    I'm currently looking for new opportunities and my inbox is always open. 
+                    Whether you have a question, a project idea, or just want to say hi — 
+                    feel free to reach out!
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:pushkarparth117@gmail.com" class="contact-card glass-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>pushkarparth117@gmail.com</p>
+                    </a>
+                    <a href="https://linkedin.com/in/parth-pushkar-b57917278" target="_blank" rel="noopener" class="contact-card glass-card">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Parth Pushkar</p>
+                    </a>
+                    <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" class="contact-card glass-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>parthhpushkar</p>
+                    </a>
+                </div>
+                <a href="mailto:pushkarparth117@gmail.com" class="btn btn-primary contact-btn">
+                    <span>Say Hello</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <strong>Parth Pushkar</strong>
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/parthhpushkar" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/parth-pushkar-b57917278" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:pushkarparth117@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Parth Pushkar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Parth Pushkar",
+        "url": "https://parthhpushkar.github.io",
+        "jobTitle": "Full Stack Developer",
+        "email": "pushkarparth117@gmail.com",
+        "sameAs": [
+            "https://github.com/parthhpushkar",
+            "https://linkedin.com/in/parth-pushkar-b57917278"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Bennett University"
+        },
+        "knowsAbout": ["Full Stack Development", "MERN Stack", "Next.js", "AI/ML", "Generative AI"]
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
